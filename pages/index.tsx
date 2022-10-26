@@ -13,10 +13,9 @@ const Home: NextPage = () => {
       {!session ? (
         <div className="row">
           <div className="col-6">
-            <h1 className="header">Supabase Auth + Storage</h1>
+            <h1 className="header">Progress Coin</h1>
             <p className="">
-              Experience our Auth and Storage through a simple profile management example. Create a
-              user profile and upload an avatar image. Fast, simple, secure.
+              Explore a new way of saving and paying in your local community.
             </p>
           </div>
           <div className="col-6 auth-widget">
@@ -25,7 +24,7 @@ const Home: NextPage = () => {
         </div>
       ) : (
         <>
-          <h3>Account</h3>
+          <h3>Your Progress Coin Account</h3>
           <Account session={session} />
         </>
       )}

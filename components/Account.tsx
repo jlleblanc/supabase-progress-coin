@@ -87,6 +87,7 @@ export default function Account({ session }: { session: Session }) {
           setAvatarUrl(url)
           updateProfile({ username, website, avatar_url: url })
         }}
+        showInput={true}
       />
       <div>
         <label htmlFor="email">Email</label>
