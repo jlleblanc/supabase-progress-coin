@@ -3,6 +3,7 @@ import { useUser, useSupabaseClient, Session } from '@supabase/auth-helpers-reac
 import Avatar from './Avatar'
 
 import { Database } from '../utils/database.types'
+import Link from 'next/link'
 type Profiles = Database['public']['Tables']['profiles']['Row']
 
 export default function Account({ session }: { session: Session }) {
@@ -127,6 +128,14 @@ export default function Account({ session }: { session: Session }) {
           Sign Out
         </button>
       </div>
+
+      {username ? (
+        <Link href="/profile">Public profile</Link>
+      ) : (
+      <span>
+
+      </span>
+      )}
     </div>
   )
 }

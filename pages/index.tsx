@@ -25,6 +25,7 @@ const Home: NextPage = () => {
       ) : (
         <>
           <h3>Your Progress Coin Account</h3>
+          {/* TODO: rework the Account component to have onboarding vs. onboarded views */}
           <Account session={session} />
         </>
       )}
